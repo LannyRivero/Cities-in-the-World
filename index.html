@@ -7,155 +7,209 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="./dist/output.css">
 </head>
+
 <body class="bg-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-gray-800 text-white p-4 flex justify-between">
-    <h1 class="text-lg font-bold">Cities in the World</h1>
-    <nav>
-      <a href="#" class="mr-4">Home</a>
-      <a href="#" class="mr-4">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <div class="container mx-auto max-w-6xl ">
 
-  <!-- Main Content -->
-  <div class="max-w-6xl mx-auto p-6">
+    <!-- Header -->    
+<header class="bg-gray-800 text-white p-4">
+  <nav class="flex justify-between items-center ">
+    <h1 class="text-2xl font-bold">Cities in the World</h1>
     
-    <!-- Title with Background Image -->
-    <div class="relative bg-cover bg-center h-48 flex items-center justify-center" style="background-image: url('./src/asset/north-america-1803504_1280.jpg');">
-      <h2 class="text-3xl font-bold text-white bg-gray-900 bg-opacity-50 px-4 py-2 rounded">The Most Popular City</h2>
+    <div class="w-full md:w-1/2 p-5 flex justify-end space-x-4">
+      <a href="#" class="hover:underline">Home</a></li>
+      <a href="#" class="hover:underline">About</a></li>
+      <a href="#" class="hover:underline">Contact</a></li>
     </div>
-  </div>
+  </nav>
+</header>
+<div class="max-w-6xl mx-auto p-6">
+        <div class="relative bg-cover bg-center h-48 flex items-center justify-center" 
+             style="background-image: url('asset/north-america-1803504_1280.jpg');">
+          <h2 class="text-3xl font-bold text-white bg-gray-900 bg-opacity-50 px-4 py-2 rounded">
+            The Most Popular City
+          </h2>
+        </div>
+</div>
 
-    <!-- Layout -->
-    <div class="flex">
+<!-- Contenedor para Sidebar y Cards -->
+<div class="max-w-6xl mx-auto p-6">
+  <div class="flex flex-wrap lg:flex-nowrap gap-6">
+
       <!-- Sidebar -->
-      <aside class="w-1/4 bg-gray-200 p-4">
-        <h3 class="font-bold mb-4">Ranking - Most Visited</h3>
-        <ul>
-          <li class="py-2 border-b">
+    <aside class="w-full lg:w-1/4 bg-gray-200 p-4">
+      <h3 class="font-bold mb-4">Ranking - Most Visited</h3>
+        <ul class="space-y-4">
+          <li>
             <div class="bg-white p-4 shadow-md">
-                <img src="./src/asset/new-york.jpg" alt="New York" class="w-full h-24 object-cover rounded mb-4">
-                <p>New York is one of the most visited cities in the world.</p>
-               
-              </div>
+              <img src="asset/new-york.jpg" alt="New York" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">New York is one of the most visited cities in the world.</p>
+            </div>
           </li>
-          <li class="py-2 border-b">
+          <li>
             <div class="bg-white p-4 shadow-md">
-                <img src="./src/asset/paris.jpg.jpg" alt="Paris" class="w-full h-24 object-cover rounded mb-4">
-                <p>Paris, the city of light, is famous for its landmarks and culture.</p>
-              
+              <img src="asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">Dubai, a city of modern marvels, is home to the iconic Burj Khalifa.</p>
+            </div>
           </li>
-          <li class="py-2 border-b">
-          <div class="bg-white p-4 shadow-md">
-            <img src="./src/asset/tokyo.jpg" alt="Tokyo" class="w-full h-24 object-cover rounded mb-4">
-            <p>Tokyo, a vibrant city, is known for its illuminated streets and serene temples.</p>
-            
+          <li>
+            <div class="bg-white p-4 shadow-md">
+              <img src="asset/coliseum.jpg" alt="Rome" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">Rome, the Eternal City, is renowned for its ancient landmarks like the Coliseum, Roman Forum, and Vatican City.</p>
+            </div>
           </li>
-          <li class="py-2 border-b">
-          <div class="bg-white p-4 shadow-md">
-            <img src="./src/asset/london.jpg" alt="London" class="w-full h-24 object-cover rounded mb-4">
-            <p>London is home to iconic landmarks like Big Ben and Tower Bridge.</p>
-           
-          </div>
+          <li>
+            <div class="bg-white p-4 shadow-md">
+              <img src="asset/london.jpg" alt="london" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">The vibrant capital of England, is known for its iconic landmarks like Big Ben, Buckingham Palace, and the London Eye.</p>
+            </div>
           </li>
-          <li class="py-2 border-b">
-          <div class="bg-white p-4 shadow-md">
-            <img src="./src/asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-24 object-cover rounded mb-4">
-            <p>Dubai, a modern city, boasts the Burj Khalifa and stunning urban landscapes.</p>
-            
-          </div>
+          <li>
+            <div class="bg-white p-4 shadow-md">
+              <img src="asset/paris.jpg.jpg" alt="Paris" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">Paris, the City of Light, is celebrated for its iconic Eiffel Tower, charming streets, and world-class museums like the Louvre.</p>
+            </div>
           </li>
-          <li class="py-2 border-b">
-          <div class="bg-white p-4 shadow-md">
-            <img src="./src/asset/coliseum.jpg" alt="Rome" class="w-full h-24 object-cover rounded mb-4">
-            <p>Rome, a historic city, is famous for the Coliseum and charming alleys.</p>
-           
-          </div>
+          <li>
+            <div class="bg-white p-4 shadow-md">
+              <img src="asset/tokyo.jpg" alt="Tokio" class="w-full h-24 object-cover rounded mb-2">
+                <p class="text-sm">Tokyo, a city where tradition meets innovation, is known for its futuristic skyline, ancient temples, and bustling streets like Shibuya Crossing.</p>
+            </div>
           </li>
-        </section>    
         </ul>
       </aside>
-
-      <!-- Content Section -->
-      <section class="w-3/4 grid grid-cols-3 gap-4 p-4">
+    
+      <!-- Cards -->
+      <section class="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="./src/asset/new-york.jpg" alt="New York" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <h3 class="text-xl font-bold mb-2">New York</h3>
-                <p class="text-gray-700 text-sm">The city that never sleeps, known for its iconic skyline and Times Square.</p>
-                <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
-              </div>
+          <img src="asset/new-york1.jpg" alt="New York" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">New York</h3>
+            <p class="text-gray-700 text-sm mb-2">
+              New York, often referred to as "The Big Apple," is one of the most iconic cities in the world. Known for its vibrant energy and diversity, 
+              the city is a global hub for culture, finance, and entertainment. Its skyline, dominated by landmarks like the Empire State Building and 
+              One World Trade Center, is instantly recognizable. From the bright lights of Times Square to the tranquility of Central Park, New York offers 
+              an endless array of attractions. With its world-class museums, theaters, and culinary scene, the city truly lives up to its reputation as a 
+              place where dreams come true.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
         </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="./src/asset/paris.jpg.jpg" alt="Paris" class="w-full h-40 object-cover">
-          <div class="p-4">
-          <p class="text-gray-700 text-sm">The city of light, home to the Eiffel Tower and rich cultural heritage.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
-        </div>
-    </div>
 
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="./src/asset/tokyo.jpg" alt="Tokyo" class="w-full h-40 object-cover">
-          <div class="p-4">
-          <p class="text-gray-700 text-sm">A vibrant city known for its futuristic skyline and serene temples.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
+          <img src="asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">Dubai</h3>
+            <p class="text-gray-700 text-sm mb-2">
+                Dubai, a dazzling metropolis in the United Arab Emirates, is renowned for its futuristic architecture, luxurious lifestyle, and unparalleled 
+                innovation. The city is home to the iconic Burj Khalifa, the tallest building in the world, offering breathtaking views from its observation decks.
+                Despite its modernity, Dubai preserves its cultural heritage through traditional souks, camel rides, and desert safaris, creating a perfect blend 
+                of old and new. As a global hub for business, tourism, and innovation, Dubai stands as a symbol of ambition and progress.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
         </div>
-    </div>
 
-        
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="./src/asset/london.jpg" alt="London" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <p class="text-gray-700 text-sm">The capital of England, famous for Big Ben and Tower Bridge.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
+          <img src="asset/coliseum.jpg" alt="Rome" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">Rome</h3>
+            <p class="text-gray-700 text-sm mb-2">
+              Rome, often called "The Eternal City," is a living museum that seamlessly blends ancient history with vibrant modern life. As the heart of the 
+              Roman Empire, it is home to some of the world’s most iconic landmarks, including the Colosseum, the Roman Forum, and the Pantheon, which 
+              stand as enduring symbols of its glorious past. Beyond its ancient ruins, Rome offers stunning Baroque fountains like the Trevi Fountain, 
+              charming piazzas, and beautiful basilicas, including St. Peter's Basilica in Vatican City.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
         </div>
-    </div>
 
-         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="./src/asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <p class="text-gray-700 text-sm">A modern city with the iconic Burj Khalifa and stunning landscapes.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="asset/london1.jpg" alt="London" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">London</h3>
+            <p class="text-gray-700 text-sm mb-2">
+              London, the bustling capital of England, is a city where history and modernity collide. Famous for its iconic landmarks such as Big Ben, the 
+              Tower of London, and Buckingham Palace, it offers a glimpse into the rich heritage of the British monarchy. The city's cultural scene is equally 
+              impressive, with world-class museums like the British Museum and the Tate Modern, as well as the vibrant West End theater district. 
+              As a global hub for finance, fashion, and innovation, London remains a city that captivates and inspires visitors from around the world.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
         </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="asset/paris1.jpg" alt="Paris" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">Paris</h3>
+            <p class="text-gray-700 text-sm mb-2">
+              Paris, known as "The City of Light," is a timeless symbol of romance, culture, and elegance. Famous for its iconic Eiffel Tower, the city
+               captivates visitors with its breathtaking views and architectural beauty. The Louvre Museum, home to masterpieces like the Mona Lisa, and 
+               the Musée d'Orsay, showcasing impressionist art, highlight its rich artistic heritage.From the grandeur of Notre Dame Cathedral to the serenity of the Seine River, every corner of Paris tells a
+                 story of its historic and cultural significance, making it a destination that inspires awe and admiration.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="asset/tokyo1.jpg" alt="Tokyo" class="w-full h-40 object-cover">
+          <div class="p-3">
+            <h3 class="text-xl font-bold mb-1">Tokyo</h3>
+            <p class="text-gray-700 text-sm mb-2">
+              Tokyo, the dynamic capital of Japan, is a city where ancient traditions blend seamlessly with cutting-edge innovation. Known for its futuristic skyline 
+              dominated by landmarks like the Tokyo Skytree and Shinjuku’s neon lights, the city offers a glimpse into the world of tomorrow.As a global hub for technology, 
+              fashion, and gastronomy, Tokyo also delights food lovers with its world-renowned sushi,ramen, and izakaya experiences. Whether it's the charm of cherry blossoms in 
+              spring or the excitement of its endless nightlife, Tokyo is a city that never ceases to amaze.
+            </p>
+          <button class="bg-gray-800 text-white mt-2 px-4 py-1.5 rounded">Learn More</button>
+          </div>
+        </div>
+       </section>
+      </div>
     </div>
 
-    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="./src/asset/coliseum.jpg" alt="Rome" class="w-full h-40 object-cover">
-        <div class="p-4">
-            <p class="text-gray-700 text-sm">Known for its historic landmarks like the Coliseum and Roman Forum.</p>
-      <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
-    </div>
-</div>
-      </section>
-    </div>
-
-    <!-- Most Popular Restaurant -->
+<!-- Popular Restaurant-->  
+<section class="bg-gray-100 py-12">    
     <h2 class="text-2xl font-bold text-center my-6">Most Popular Restaurant</h2>
-<div class="flex justify-center gap-6">
-  <div class="text-center">
-    <img src="./src/asset/restaurant1.jpg" alt="Restaurant 1" class="w-24 h-24 object-cover rounded-full mx-auto">
-    <p class="mt-2 text-sm text-gray-700">Popular NYC</p>
+  <div class="flex justify-center gap-6">
+
+    <div class="text-center">
+      <img src="asset/restaurant1.jpg" alt="Restaurant 1" class="w-24 h-24 object-cover rounded-full mx-auto">
+      <p class="mt-2 text-sm text-gray-700">Popular NYC</p>
+    </div>
+
+    <div class="text-center">
+      <img src="asset/restaurant2.jpg" alt="Restaurant 2" class="w-24 h-24 object-cover rounded-full mx-auto">
+      <p class="mt-2 text-sm text-gray-700">Little Tokyo</p>
+    </div>
+
+    <div class="text-center">
+      <img src="asset/restaurant3.jpg" alt="Restaurant 3" class="w-24 h-24 object-cover rounded-full mx-auto">
+      <p class="mt-2 text-sm text-gray-700">Le Petit Chef</p>
+    </div>
+
+    <div class="text-center">
+      <img src="asset/restaurant4.jpg" alt="Restaurant 4" class="w-24 h-24 object-cover rounded-full mx-auto">
+      <p class="mt-2 text-sm text-gray-700">Sidreria Casa Carmen</p>
+    </div>
   </div>
-  <div class="text-center">
-    <img src="./src/asset/restaurant2.jpg" alt="Restaurant 2" class="w-24 h-24 object-cover rounded-full mx-auto">
-    <p class="mt-2 text-sm text-gray-700">Little Tokyo</p>
-  </div>
-  <div class="text-center">
-    <img src="./src/asset/restaurant3.jpg" alt="Restaurant 3" class="w-24 h-24 object-cover rounded-full mx-auto">
-    <p class="mt-2 text-sm text-gray-700">Le Petit Chef</p>
-  </div>
-  <div class="text-center">
-    <img src="./src/asset/restaurant4.jpg" alt="Restaurant 4" class="w-24 h-24 object-cover rounded-full mx-auto">
-    <p class="mt-2 text-sm text-gray-700">Sidreria Casa Carmen</p>
-  </div>
-</div>
+</section>
+
+<!-- Footer -->    
+  <footer class="bg-white border-t border-gray-300 p-4 flex items-center justify-between">
+    <div class="flex items-center">
+      <div class="w-6 h-6 bg-gray-300 rounded mr-2"></div>
+      <p class="text-sm text-gray-600">&copy; 2025 Company, Inc</p>
+    </div>
+    <div class="w-full md:w-1/2 p-5 flex justify-end space-x-4">
+      <a href="#"><img src="asset/location_city.png" alt="Building Icon" class="w-6 h-6"></a>
+      <a href="#"><img src="asset/opacity.png" alt="Water Icon" class="w-6 h-6"></a>
+      <a href="#"><img src="asset/City Railway Station.png" alt="Bus Icon" class="w-6 h-6"></a>
+    </div>
+  </footer>
+
 </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-4 text-center">
-    &copy; 2025 Company, Inc
-  </footer>
 </body>
+
 </html>
