@@ -19,9 +19,13 @@
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-6xl mx-auto p-6">
-    <!-- Title -->
-    <h2 class="text-3xl font-bold text-center my-6">The Most Popular City</h2>
+  <div class="max-w-6xl mx-auto p-6">
+    
+    <!-- Title with Background Image -->
+    <div class="relative bg-cover bg-center h-48 flex items-center justify-center" style="background-image: url('./src/asset/north-america-1803504_1280.jpg');">
+      <h2 class="text-3xl font-bold text-white bg-gray-900 bg-opacity-50 px-4 py-2 rounded">The Most Popular City</h2>
+    </div>
+  </div>
 
     <!-- Layout -->
     <div class="flex">
@@ -29,75 +33,129 @@
       <aside class="w-1/4 bg-gray-200 p-4">
         <h3 class="font-bold mb-4">Ranking - Most Visited</h3>
         <ul>
-          <li class="py-2 border-b">🏙️ Name of the City 1</li>
-          <li class="py-2 border-b">🏙️ Name of the City 2</li>
-          <li class="py-2 border-b">🏙️ Name of the City 3</li>
-          <li class="py-2 border-b">🏙️ Name of the City 4</li>
-          <li class="py-2 border-b">🏙️ Name of the City 5</li>
-          <li class="py-2 border-b">🏙️ Name of the City 6</li>
+          <li class="py-2 border-b">
+            <div class="bg-white p-4 shadow-md">
+                <img src="./src/asset/new-york.jpg" alt="New York" class="w-full h-24 object-cover rounded mb-4">
+                <p>New York is one of the most visited cities in the world.</p>
+               
+              </div>
+          </li>
+          <li class="py-2 border-b">
+            <div class="bg-white p-4 shadow-md">
+                <img src="./src/asset/paris.jpg.jpg" alt="Paris" class="w-full h-24 object-cover rounded mb-4">
+                <p>Paris, the city of light, is famous for its landmarks and culture.</p>
+              
+          </li>
+          <li class="py-2 border-b">
+          <div class="bg-white p-4 shadow-md">
+            <img src="./src/asset/tokyo.jpg" alt="Tokyo" class="w-full h-24 object-cover rounded mb-4">
+            <p>Tokyo, a vibrant city, is known for its illuminated streets and serene temples.</p>
+            
+          </li>
+          <li class="py-2 border-b">
+          <div class="bg-white p-4 shadow-md">
+            <img src="./src/asset/london.jpg" alt="London" class="w-full h-24 object-cover rounded mb-4">
+            <p>London is home to iconic landmarks like Big Ben and Tower Bridge.</p>
+           
+          </div>
+          </li>
+          <li class="py-2 border-b">
+          <div class="bg-white p-4 shadow-md">
+            <img src="./src/asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-24 object-cover rounded mb-4">
+            <p>Dubai, a modern city, boasts the Burj Khalifa and stunning urban landscapes.</p>
+            
+          </div>
+          </li>
+          <li class="py-2 border-b">
+          <div class="bg-white p-4 shadow-md">
+            <img src="./src/asset/coliseum.jpg" alt="Rome" class="w-full h-24 object-cover rounded mb-4">
+            <p>Rome, a historic city, is famous for the Coliseum and charming alleys.</p>
+           
+          </div>
+          </li>
+        </section>    
         </ul>
       </aside>
 
       <!-- Content Section -->
       <section class="w-3/4 grid grid-cols-3 gap-4 p-4">
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./src/asset/new-york.jpg" alt="New York" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">New York</h3>
+                <p class="text-gray-700 text-sm">The city that never sleeps, known for its iconic skyline and Times Square.</p>
+                <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
+              </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./src/asset/paris.jpg.jpg" alt="Paris" class="w-full h-40 object-cover">
+          <div class="p-4">
+          <p class="text-gray-700 text-sm">The city of light, home to the Eiffel Tower and rich cultural heritage.</p>
           <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
         </div>
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
+    </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./src/asset/tokyo.jpg" alt="Tokyo" class="w-full h-40 object-cover">
+          <div class="p-4">
+          <p class="text-gray-700 text-sm">A vibrant city known for its futuristic skyline and serene temples.</p>
           <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
         </div>
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
+    </div>
+
+        
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./src/asset/london.jpg" alt="London" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <p class="text-gray-700 text-sm">The capital of England, famous for Big Ben and Tower Bridge.</p>
           <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
         </div>
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
+    </div>
+
+         <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./src/asset/burj-khalifa.jpg" alt="Dubai" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <p class="text-gray-700 text-sm">A modern city with the iconic Burj Khalifa and stunning landscapes.</p>
           <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
         </div>
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
-        </div>
-        <div class="bg-white p-4 shadow-md">
-          <div class="h-24 bg-gray-300 mb-4"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a congue massa, eu hendrerit mauris.</p>
-          <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
-        </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="./src/asset/coliseum.jpg" alt="Rome" class="w-full h-40 object-cover">
+        <div class="p-4">
+            <p class="text-gray-700 text-sm">Known for its historic landmarks like the Coliseum and Roman Forum.</p>
+      <button class="bg-gray-800 text-white mt-4 px-4 py-2 rounded">Learn More</button>
+    </div>
+</div>
       </section>
     </div>
 
     <!-- Most Popular Restaurant -->
     <h2 class="text-2xl font-bold text-center my-6">Most Popular Restaurant</h2>
-    <div class="flex justify-center gap-6">
-      <div class="text-center">
-        <div class="bg-red-500 w-16 h-16 rounded-full mx-auto"></div>
-        <p class="mt-2 text-sm text-gray-700">Lorem Ipsum</p>
-      </div>
-      <div class="text-center">
-        <div class="bg-red-500 w-16 h-16 rounded-full mx-auto"></div>
-        <p class="mt-2 text-sm text-gray-700">Lorem Ipsum</p>
-      </div>
-      <div class="text-center">
-        <div class="bg-red-500 w-16 h-16 rounded-full mx-auto"></div>
-        <p class="mt-2 text-sm text-gray-700">Lorem Ipsum</p>
-      </div>
-      <div class="text-center">
-        <div class="bg-red-500 w-16 h-16 rounded-full mx-auto"></div>
-        <p class="mt-2 text-sm text-gray-700">Lorem Ipsum</p>
-      </div>
-    </div>
-  </main>
+<div class="flex justify-center gap-6">
+  <div class="text-center">
+    <img src="./src/asset/restaurant1.jpg" alt="Restaurant 1" class="w-24 h-24 object-cover rounded-full mx-auto">
+    <p class="mt-2 text-sm text-gray-700">Popular NYC</p>
+  </div>
+  <div class="text-center">
+    <img src="./src/asset/restaurant2.jpg" alt="Restaurant 2" class="w-24 h-24 object-cover rounded-full mx-auto">
+    <p class="mt-2 text-sm text-gray-700">Little Tokyo</p>
+  </div>
+  <div class="text-center">
+    <img src="./src/asset/restaurant3.jpg" alt="Restaurant 3" class="w-24 h-24 object-cover rounded-full mx-auto">
+    <p class="mt-2 text-sm text-gray-700">Le Petit Chef</p>
+  </div>
+  <div class="text-center">
+    <img src="./src/asset/restaurant4.jpg" alt="Restaurant 4" class="w-24 h-24 object-cover rounded-full mx-auto">
+    <p class="mt-2 text-sm text-gray-700">Sidreria Casa Carmen</p>
+  </div>
+</div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white p-4 text-center">
-    &copy; 2021 Company, Inc
+    &copy; 2025 Company, Inc
   </footer>
 </body>
 </html>
